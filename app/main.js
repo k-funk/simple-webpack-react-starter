@@ -1,7 +1,6 @@
-require("./Assets/style.scss")
+var anchorJS = require('anchor-js');
+var $ = require('jquery');
 
-var React = require('react');
-
-var App = require('./App.js');
-
-React.render(<App/>, document.getElementById('body'))
+$(function() {
+  new anchorJS({placement: 'right'}).add('h3');
+});
